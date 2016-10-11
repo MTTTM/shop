@@ -1,0 +1,47 @@
+<%for(var i = 0; i < data.list.length; i++) {%>
+	<%if(data.list[i].typeCode === 0){%>
+		<%for(var j = 0; j < data.list[i].listtype.length; j++) {%>
+		<div class="content-list">
+			<p class="list-title">中秋快乐</p>
+			<div class="list-mooncake">
+				<a href="javascript:;"><img src="./images2/2.jpg"></a>
+				<div class="list-banner">
+					<span>中秋欢喜团圆宴吃什么？</span>
+					<p class="list-r-cutline"></p>
+					<span>吃月饼</span>
+					<p class="list-l-cutline"></p>
+				</div>
+			</div>			
+			<div class="list-mad lists">
+				<ul>
+					<%for(var j = 0; j < data.list[i].listtype.length; j++) {%>			
+					<li>
+						<a href="javascript:;">
+							<img src="<%= data.list[i].listlink[j] %>">
+						</a>
+						<p><%= data.list[i].listtype[j] %></p>
+					</li>
+					<%}%>
+				</ul>
+			</div>
+		</div>
+		<%}%>						
+	<%}%>
+	<%if( data.list[i].typeCode !== 0 && data.list[i].typeCode !== 4 ){%>
+		<div class="content-list">
+			<p class="list-title"><%= data.list[i].type %></p>
+			<div class="list-mad lists">
+				<ul>
+					<%for(var j = 0; j < data.list[i].listtype.length; j++) {%>			
+					<li>
+						<a href="javascript:;">
+							<img src="<%= data.list[i].listlink[j] %>">
+						</a>
+						<p><%= data.list[i].listtype[j] %></p>						
+					</li>
+					<%}%>						
+				</ul>
+			</div>
+		</div>
+	<%}%>	
+<%}%>
