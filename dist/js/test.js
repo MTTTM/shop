@@ -1,0 +1,1 @@
+define(function(n){function t(n){for(var t=document.querySelectorAll(".content-list"),e=document.querySelector("header a img"),o=t.length-1;o>=0;o--)t[o].style.display="none";t[n].style.display="block",e.style.display="none"}var e={"/author":function(){t(1)},"/autho":function(){t(2)},"/auth":function(){t(3)}},o=Router(e);o.init()});

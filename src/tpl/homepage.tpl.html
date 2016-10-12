@@ -1,17 +1,8 @@
-<!-- <ul>
-	<%for(var i = 0; i < search.length; i++) {%>
-		<li>
-			<div class="content <%= pnt[i] %>"><a href="<%= link[i] %>"></a></div>
-			<p><%= search[i] %></p>
-		</li>
-	<%}%>
-</ul> -->
-
 <ul>
-	<%for(var i = 0; i < data.list.search.length; i++) {%>
+	<%for(var i = 0; i < data.list[0].search.length; i++) {%>
 		<li>
-			<div class="content <%= data.list.pnt[i] %>"><a href="<%= data.list.link[i] %>"></a></div>
-			<p><%= data.list.search[i] %></p>
+			<div class="content <%= data.list[0].pnt[i] %>"><a href="<%= data.list[0].link[i] %>"></a></div>
+			<p><%= data.list[0].search[i] %></p>
 		</li>
 	<%}%>
 </ul>

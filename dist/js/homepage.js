@@ -1,0 +1,1 @@
+define(function(a){var t=a("Public");$.ajax({type:"GET",url:"./datas/homepageData.js",dataType:"json",success:function(a){var e=a;console.log(e.data),e.status&&e.data&&t.temp("../src/tpl/homepage.tpl.html",e,$(".content-search"),{appendChild:!0})},error:function(a){console.log(a)}})});

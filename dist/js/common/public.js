@@ -1,0 +1,1 @@
+define(function(e){var n=e("template"),t={temp:function(e,t,o,a){a||(a={}),$.ajax({type:"GET",url:e,dataType:"text",success:function(e){console.log(e);var c=n.compile(e),l=c(t);a.appendChild?o.append(l):o.html(l)},error:function(e){console.log(e)}})}};return t});

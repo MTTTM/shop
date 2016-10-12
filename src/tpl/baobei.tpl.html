@@ -1,10 +1,10 @@
 <ul>
-	<%for(var i = 0; i < data.list.listlink.length; i++) {%>
+	<%for(var i = 0; i < data.list[0].listlink.length; i++) {%>
 		<li>
 			<div class="content-wares">
-				<a href="javascript:;"><img src="<%= data.list.listlink[i] %>"></a>
+				<a href="javascript:;"><img src="<%= data.list[0].listlink[i] %>"></a>
 			</div>
-			<p><%= data.list.listprice[i] %><span class="throughline"><%= data.list.listpriceTh[i] %></span>
+			<p><%= data.list[0].listprice[i] %><span class="throughline"><%= data.list[0].listpriceTh[i] %></span>
 			</p>
 			<p></p>
 		</li>
