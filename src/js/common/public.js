@@ -5,7 +5,6 @@ define(function(require){
 			if(!append){
 				append = {};
 			}
-
 			$.ajax({
 				type: 'GET',
 				url: tpl,
@@ -19,8 +18,7 @@ define(function(require){
 						ele.append(html);
 					}else{
 						ele.html(html);
-					}
-					
+					}					
 				},
 				error: function(xhr){
 					console.log(xhr);

@@ -37,6 +37,11 @@ gulp.task('testCss', function () {
     
  
 gulp.task('jsmin', function () {
+    gulp.src(['src/datas/**'])
+        .pipe(gulp.dest('dist/datas'));
+});
+
+gulp.task('jsmins', function () {
     gulp.src(['src/js/**', '!src/js/libs/*'])
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
@@ -90,4 +95,4 @@ gulp.task('clean', function () {
 });
 
 // 多任务进行
-gulp.task('compless', ['clean'], gulpSequence( 'testHtml', 'testImage', 'testCss', 'jsmin', 'libs', 'testLess' ));
+gulp.task('compless', ['clean'], gulpSequence( 'testHtml', 'testImage', 'testCss', 'jsmin', 'libs', 'testLess','jsmins' ));

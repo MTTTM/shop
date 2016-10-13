@@ -12,7 +12,7 @@ require.config({
         "categories":"categories",
     }
 });
-require(['require', 'common', 'director', 'zepto'],function(){
+require(['require', 'template', 'zepto', 'common', 'director', 'Public'],function(){
     console.log('ok1');
     var localName     = location.pathname;
     var localArrName  = localName.split('/');
