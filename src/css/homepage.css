@@ -45,7 +45,18 @@ section {
   padding-bottom: 2.75rem;
 }
 .content-roll {
+  height: 7.375rem;
+  position: relative;
   display: block;
+}
+.content-roll img{
+  position: absolute;
+  left: 0;
+  top:0;
+  transition: 1s;
+  -moz-transition: 1s; /* Firefox 4 */
+  -webkit-transition: 1s; /* Safari and Chrome */
+  -o-transition: 1s; /* Opera */
 }
 .content-touch {
   position: relative;
@@ -64,6 +75,9 @@ section {
   margin-right: 0.375rem;
   border-radius: 0.5rem;
   background-color: #e5e5e5;
+}
+.content-touch li.ative{
+  background-color: red;
 }
 .content-search {
   height: 10.875rem;

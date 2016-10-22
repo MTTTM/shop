@@ -1,1 +1,1 @@
-define(function(e){var n=e("template"),t={temp:function(e,t,o,a){a||(a={}),$.ajax({type:"GET",url:e,dataType:"text",success:function(e){console.log(e);var c=n.compile(e),l=c(t);a.appendChild?o.append(l):o.html(l)},error:function(e){console.log(e)}})}};return t});
+define(function(e){var n=e("template"),t={temp:function(e,t,a,o){o||(o={}),$.ajax({type:"GET",url:e,dataType:"text",success:function(e){var p=n.compile(e),c=p(t);o.appendChild?a.append(c):a.html(c)},error:function(e){console.log(e)}})}};return t});

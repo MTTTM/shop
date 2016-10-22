@@ -10,7 +10,7 @@ define(function(require){
 				url: tpl,
 				dataType: 'text',
 				success: function(data){
-					console.log(data);
+					// console.log(data);
 					var render = template.compile(data);
 					var html = render(obj);
 
