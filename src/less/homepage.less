@@ -1,7 +1,4 @@
-.content-list{
-	overflow: hidden;
-	clear: both;
-}
+
 header{
 	width: 100%;
 	background-color: #fe5400;
@@ -44,7 +41,11 @@ section{
 	padding-top: 2.5rem;
 	padding-bottom: 2.75rem;
 }
-.content-roll{
+.content-list{
+	overflow: hidden;
+	clear: both;
+	position: relative;
+	.content-roll{
 	  height: 118px;
 	  position: relative;
 	  display: block;
@@ -57,23 +58,24 @@ section{
 		  -webkit-transition: 1s; /* Safari and Chrome */
 		  -o-transition: 1s; /* Opera */
 		} 
-}
-.content-touch{
-	position: relative;
+	}
 	.content-sliding{
 	    position: absolute;
 	    left: 17.5rem;
 		bottom: 1rem;
-	}
-	li {
-		display: block;
-		height: 0.625rem;
-		width: 0.625rem;
-		float: left;
-		margin-left: 0.375rem;
-		margin-right: 0.375rem;
-		border-radius: 0.5rem;
-		background-color: #e5e5e5;
+		li {
+			display: block;
+			height: 0.625rem;
+			width: 0.625rem;
+			float: left;
+			margin-left: 0.375rem;
+			margin-right: 0.375rem;
+			border-radius: 0.5rem;
+			background-color: #e5e5e5;
+			&.ative{
+				background-color: red;
+			}
+		}
 	}
 }
 .content-search{

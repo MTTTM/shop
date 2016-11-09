@@ -1,0 +1,1 @@
+define(function(t){var n={init:function(){this.bar()},bar:function(){var t=$(".one"),n=$(".two").width(),i=$(".percent"),e=0,o=setInterval(function(){e+=6,i.text(e+"%"),t.css("width",n*e/100),e>=100&&(clearInterval(o),i.text("100%"),t.css("width",n),window.location.href="./homepage.html")},100)}};n.init()});

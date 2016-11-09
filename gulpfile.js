@@ -42,7 +42,7 @@ gulp.task('jsmin', function () {
 });
 
 gulp.task('jsmins', function () {
-    gulp.src(['src/js/**', '!src/js/libs/*'])
+    gulp.src(['src/js/*.js', 'src/js/**/*.js', '!src/js/libs/*'])
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });

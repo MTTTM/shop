@@ -37,9 +37,9 @@
   border-bottom: 0.0625rem solid #ddd;
   background-color: #fff;
 }
-.head-show:before{
+.head-show:before {
   content: "";
-  display: block; 
+  display: block;
   height: 0.75rem;
   width: 1.5625rem;
   background-image: url("../images2/down.png");

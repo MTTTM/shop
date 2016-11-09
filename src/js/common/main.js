@@ -10,6 +10,7 @@ require.config({
         "Public":"common/Public",
         // 私有
         "categories":"categories",
+        "index": "index"
     }
 });
 require(['require', 'template', 'zepto', 'common', 'director', 'Public'],function(){
